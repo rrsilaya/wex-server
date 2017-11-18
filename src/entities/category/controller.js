@@ -2,7 +2,28 @@ import { Question } from '../../database';
 
 export const getCategories = () => {
   return new Promise((resolve, reject) => {
-    return resolve();
+    Question.aggregate([
+      {
+        $group: {
+          _id: '$category',
+          questions: { $push: { _id: '$_id', question: '$question' } }
+        }
+      },
+      {
+        $project: {
+          _id: 0,
+          category: '$_id',
+          questions: 1
+        }
+      }
+    ]).exec((err, categories) => {
+      if (err) {
+        console.log(err);
+        return reject(500);
+      }
+
+      return resolve(categories);
+    });
   });
 };
 
