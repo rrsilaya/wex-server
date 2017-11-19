@@ -3,7 +3,9 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "connect-mongo": "^2.0.0",
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "mongoose": "^4.13.1",
     "morgan": "^1.9.0"
   },
@@ -13,7 +15,7 @@
     "lint-staged": "^4.3.0",
     "prettier": "^1.8.1"
   },
-	"scripts": {
+  "scripts": {
     "start": "backpack",
     "build": "backpack build",
     "precommit": "lint-staged",

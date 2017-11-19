@@ -29,28 +29,10 @@ router.get('/api/score/arcade', async (req, res) => {
       data: scores
     });
   } catch (status) {
-    res
-      .status(status)
-      .json({
-        status,
-        message: 'Internal server error while getting arcade scores'
-      });
-  }
-});
-
-router.post('/api/score', async (req, res) => {
-  try {
-    const score = await Ctrl.addScore(req.body);
-
-    res.status(200).json({
-      status: 200,
-      message: 'Successfully added score',
-      data: score
+    res.status(status).json({
+      status,
+      message: 'Internal server error while getting arcade scores'
     });
-  } catch (status) {
-    res
-      .status(status)
-      .json({ status, message: 'Internal server error while adding score' });
   }
 });
 

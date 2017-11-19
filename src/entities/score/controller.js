@@ -39,7 +39,7 @@ export const addScore = ({ name, score, categories }) => {
         return reject(500);
       }
 
-      return resolve(score);
+      return resolve();
     });
   });
 };
