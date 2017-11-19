@@ -1,0 +1,271 @@
+use wex;
+db.questions.dropDatabase();
+db.questions.insertMany([
+  // TV Series
+    // Easy
+      {
+        question: "In the series How To Get Away with Murder, how many students did Annalise Keating hired as part of her team?",
+        type: "number",
+        difficulty: "Easy",
+        category: "TV Series",
+        answer: 5
+      },
+      {
+        question: "What profession is the series Suits all about?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "TV Series",
+        choices: {
+          A: "Lawyers",
+          B: "Doctors",
+          C: "Entrepreneurs",
+          D: "Celebrities"
+        },
+        answer: "A"
+      },
+      {
+        question: "What is the name of The Flash?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "TV Series",
+        choices: {
+          A: "Clark Kent",
+          B: "Peter Parker",
+          C: "Barry Allen",
+          D: "Oliver Queen"
+        },
+        answer: "C"
+      },
+      {
+        question: "What is the address of Sherlock Holmes in the series Sherlock?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "TV Series",
+        choices: {
+          A: "221 B, Baker Street",
+          B: "42 Wallaby Way, Sydney",
+          C: "129 West 81st Street, apartment 5A",
+          D: "12 Grimmauld Place, London, UK"
+        },
+        answer: "A"
+      },
+    // Medium
+      {
+        question: "If Sherlock Holmes is considered as the consulting detective, who is considered as the consulting criminal?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "TV Series",
+        choices: {
+          A: "John Watson",
+          B: "Jim Moriarty",
+          C: "Jack the Ripper",
+          D: "Irene Adler"
+        },
+        answer: "B"
+      },
+      {
+        question: "What is the game that Barney Stinson in How I Met Your Mother frequently plays?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "TV Series",
+        choices: {
+          A: "Dodgeball",
+          B: "Nerf",
+          C: "Pictionary",
+          D: "Laser tag"
+        },
+        answer: "D"
+      },
+      {
+        question: "What is the name of the hacker group in Mr. Robot?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "TV Series",
+        choices: {
+          A: "FR13NDS",
+          B: "wh1t3-r0s3",
+          C: "fsociety",
+          D: "E Corp"
+        },
+        answer: "C"
+      },
+    // Hard
+      {
+        question: "In USA Network’s Mr. Robot, what is the number of Elliot Alderson’s house?",
+        type: "number",
+        difficulty: "Hard",
+        category: "TV Series",
+        answer: 404
+      },
+      {
+        question: "What is the name of the fast food chain in the series Breaking Bad?",
+        type: "text",
+        difficulty: "Hard",
+        category: "TV Series",
+        answer: "Los Pollos Hermanos"
+      },
+      {
+        question: "What is Kira Yukimura’s type in the series Teen Wolf?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "TV Series",
+        choices: {
+          A: "Wolf",
+          B: "Kitsune",
+          C: "Banshee",
+          D: "Chimera"
+        },
+        answer: "B"
+      },
+  
+  // Anime
+    // Easy
+      {
+        question: "Who is the bald, and the most powerful hero alive",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Anime",
+        choices: {
+          A: "Ouma Shou",
+          B: "Kirito",
+          C: "Saitama",
+          D: "Son Goku"
+        },
+        answer: "C"
+      },
+      {
+        question: "What is Kayaba Akihiko’s name in SAO?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Anime",
+        choices: {
+          A: "Heathcliff",
+          B: "Klein",
+          C: "Kirito",
+          D: "Oberon",
+        },
+        answer: "A"
+      },
+      {
+        question: "Who is Lelouch’s younger sister who is blind?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Anime",
+        choices: {
+          A: "Euphemia",
+          B: "Nunnally",
+          C: "Cornelia",
+          D: "Shirley"
+        },
+        answer: "A"
+      },
+      {
+        question: "After the first season of ReLIFE, it is revealed that aside from Kaizaki Arata, Rena Kariu also takes the pill that could make a person a high school student again.",
+        type: "true_false",
+        difficulty: "Easy",
+        category: "Anime",
+        answer: false
+      },
+      {
+        question: "Who is the seventh brave?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Anime",
+        choices: {
+          A: "Goldov/Goldof",
+          B: "Nashetania/Nachetaniya",
+          C: "Hans",
+          D: "Fremy/Flamie"
+        },
+        answer: "B"
+      },
+    // Medium
+      {
+        question: "In Blend S, what is their famous tag line?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Anime",
+        choices: {
+          A: "\"Sweet, Smile, Sister, Surprise, Sadistic, Service. We are Stile!\"",
+          B: "\"Smile, Sister, Sweet, Sadistic, Service, Surprise. We are Stile!\"",
+          C: "\"Smile, Sweet, Sister, Sadistic, Surprise, Service. We are Stile!\"",
+          D: "\"Sweet, Sister, Sadistic, Service, Surprise, Smile. We are Stile!\""
+        },
+        answer: "C"
+      },
+      {
+        question: "Where did the first King’s Game happened?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Anime",
+        choices: {
+          A: "Takayama Village",
+          B: "Toyako Village",
+          C: "Yonaki Village",
+          D: "Urakawa Village"
+        },
+        answer: "C"
+      },
+      {
+        question: "Who is the friend that Future Naho Takamiya and her friends want to save by sending letters to their old self?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Anime",
+        choices: {
+          A: "Kakeru Naruse",
+          B: "Azusa Murasaka",
+          C: "Takako Chino",
+          D: "Saku Higata"
+        },
+        answer: "A"
+      },
+      {
+        question: "In Shokugeki no Soma Ni no Sara, what is the title of the opening song?",
+        type: "text",
+        difficulty: "Medium",
+        category: "Anime",
+        answer: "Rough Diamonds"
+      },
+    // Hard
+      {
+        question: "In Black Clover (TV), what is Yuno’s registration number for Magic Knight’s Entrance Exam?",
+        type: "number",
+        difficulty: "Hard",
+        category: "Anime",
+        answer: 164
+      },
+      {
+        question: "When did Makise Kurisu died in the beta world line?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Anime",
+        choices: {
+          A: "January 22, 2011",
+          B: "July 28, 2010",
+          C: "August 17, 2011",
+          D: "April 30, 2010"
+        },
+        answer: "B"
+      },
+      {
+        question: "Among the 12 future diary users, who died first in the survival game?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Anime",
+        choices: {
+          A: "Yomotsu Hirasaka",
+          B: "Tsubaki Kasugano",
+          C: "Keigo Kurusu",
+          D: "Takao Hiyama"
+        },
+        answer: "D"
+      },
+      {
+        question: "What is Yukihira Soma's room number in the Polar Star Dorm?",
+        type: "number",
+        difficulty: "Hard",
+        category: "Anime",
+        answer: 303
+      }
+
+]);

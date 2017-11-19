@@ -19,7 +19,8 @@
     "start": "backpack",
     "build": "backpack build",
     "precommit": "lint-staged",
-    "prettify": "prettier --tab-width 2 --single-quote --jsx-bracket-same-line --write ./src/**/*.js"
+    "prettify": "prettier --tab-width 2 --single-quote --jsx-bracket-same-line --write ./src/**/*.js",
+    "seed": "mongo < ./src/database/seed"
   },
   "lint-staged": {
     "*.js": [
