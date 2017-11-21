@@ -29,7 +29,7 @@ export const getRandQuestions = (categories, difficulty, qty) => {
         }
       },
       { $sample: { size: qty } },
-      { $project: { _id: 1, difficulty: 1, category: 1, answer: null } }
+      { $project: { _id: 1, difficulty: 1, category: 1 } }
     ]).exec((err, questions) => {
       if (err) {
         console.log(err);
