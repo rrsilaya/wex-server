@@ -15,12 +15,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Easy",
         category: "TV Series",
-        choices: {
-          A: "Lawyers",
-          B: "Doctors",
-          C: "Entrepreneurs",
-          D: "Celebrities"
-        },
+        choices: ["Lawyers", "Doctors", "Entrepreneurs", "Celebrities"],
         answer: "A"
       },
       {
@@ -28,12 +23,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Easy",
         category: "TV Series",
-        choices: {
-          A: "Clark Kent",
-          B: "Peter Parker",
-          C: "Barry Allen",
-          D: "Oliver Queen"
-        },
+        choices: ["Clark Kent", "Peter Parker", "Barry Allen", "Oliver Queen"],
         answer: "C"
       },
       {
@@ -41,12 +31,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Easy",
         category: "TV Series",
-        choices: {
-          A: "221 B, Baker Street",
-          B: "42 Wallaby Way, Sydney",
-          C: "129 West 81st Street, apartment 5A",
-          D: "12 Grimmauld Place, London, UK"
-        },
+        choices: ["221 B, Baker Street", "42 Wallaby Way, Sydney", "129 West 81st Street, apartment 5A", "12 Grimmauld Place, London, UK"],
         answer: "A"
       },
     // Medium
@@ -55,12 +40,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Medium",
         category: "TV Series",
-        choices: {
-          A: "John Watson",
-          B: "Jim Moriarty",
-          C: "Jack the Ripper",
-          D: "Irene Adler"
-        },
+        choices: ["John Watson", "Jim Moriarty", "Jack the Ripper", "Irene Adler"],
         answer: "B"
       },
       {
@@ -68,12 +48,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Medium",
         category: "TV Series",
-        choices: {
-          A: "Dodgeball",
-          B: "Nerf",
-          C: "Pictionary",
-          D: "Laser tag"
-        },
+        choices: ["Dodgeball", "Nerf", "Pictionary", "Laser tag"],
         answer: "D"
       },
       {
@@ -81,12 +56,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Medium",
         category: "TV Series",
-        choices: {
-          A: "FR13NDS",
-          B: "wh1t3-r0s3",
-          C: "fsociety",
-          D: "E Corp"
-        },
+        choices: ["FR13NDS", "wh1t3-r0s3", "fsociety", "E Corp"],
         answer: "C"
       },
     // Hard
@@ -109,12 +79,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Hard",
         category: "TV Series",
-        choices: {
-          A: "Wolf",
-          B: "Kitsune",
-          C: "Banshee",
-          D: "Chimera"
-        },
+        choices: ["Wolf", "Kitsune", "Banshee", "Chimera"],
         answer: "B"
       },
   
@@ -125,12 +90,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Easy",
         category: "Anime",
-        choices: {
-          A: "Ouma Shou",
-          B: "Kirito",
-          C: "Saitama",
-          D: "Son Goku"
-        },
+        choices: ["Ouma Shou", "Kirito", "Saitama", "Son Goku"],
         answer: "C"
       },
       {
@@ -138,12 +98,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Easy",
         category: "Anime",
-        choices: {
-          A: "Heathcliff",
-          B: "Klein",
-          C: "Kirito",
-          D: "Oberon",
-        },
+        choices: ["Heathcliff", "Klein", "Kirito", "Oberon", ],
         answer: "A"
       },
       {
@@ -151,12 +106,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Easy",
         category: "Anime",
-        choices: {
-          A: "Euphemia",
-          B: "Nunnally",
-          C: "Cornelia",
-          D: "Shirley"
-        },
+        choices: ["Euphemia", "Nunnally", "Cornelia", "Shirley"],
         answer: "A"
       },
       {
@@ -171,12 +121,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Easy",
         category: "Anime",
-        choices: {
-          A: "Goldov/Goldof",
-          B: "Nashetania/Nachetaniya",
-          C: "Hans",
-          D: "Fremy/Flamie"
-        },
+        choices: ["Goldov/Goldof", "Nashetania/Nachetaniya", "Hans", "Fremy/Flamie"],
         answer: "B"
       },
     // Medium
@@ -185,12 +130,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Medium",
         category: "Anime",
-        choices: {
-          A: "\"Sweet, Smile, Sister, Surprise, Sadistic, Service. We are Stile!\"",
-          B: "\"Smile, Sister, Sweet, Sadistic, Service, Surprise. We are Stile!\"",
-          C: "\"Smile, Sweet, Sister, Sadistic, Surprise, Service. We are Stile!\"",
-          D: "\"Sweet, Sister, Sadistic, Service, Surprise, Smile. We are Stile!\""
-        },
+        choices: ["\"Sweet, Smile, Sister, Surprise, Sadistic, Service. We are Stile!\"", "\"Smile, Sister, Sweet, Sadistic, Service, Surprise. We are Stile!\"", "\"Smile, Sweet, Sister, Sadistic, Surprise, Service. We are Stile!\"", "\"Sweet, Sister, Sadistic, Service, Surprise, Smile. We are Stile!\""],
         answer: "C"
       },
       {
@@ -198,12 +138,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Medium",
         category: "Anime",
-        choices: {
-          A: "Takayama Village",
-          B: "Toyako Village",
-          C: "Yonaki Village",
-          D: "Urakawa Village"
-        },
+        choices: ["Takayama Village", "Toyako Village", "Yonaki Village", "Urakawa Village"],
         answer: "C"
       },
       {
@@ -211,12 +146,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Medium",
         category: "Anime",
-        choices: {
-          A: "Kakeru Naruse",
-          B: "Azusa Murasaka",
-          C: "Takako Chino",
-          D: "Saku Higata"
-        },
+        choices: ["Kakeru Naruse", "Azusa Murasaka", "Takako Chino", "Saku Higata"],
         answer: "A"
       },
       {
@@ -239,12 +169,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Hard",
         category: "Anime",
-        choices: {
-          A: "January 22, 2011",
-          B: "July 28, 2010",
-          C: "August 17, 2011",
-          D: "April 30, 2010"
-        },
+        choices: ["January 22, 2011", "July 28, 2010", "August 17, 2011", "April 30, 2010"],
         answer: "B"
       },
       {
@@ -252,12 +177,7 @@ db.questions.insertMany([
         type: "multiple_choice",
         difficulty: "Hard",
         category: "Anime",
-        choices: {
-          A: "Yomotsu Hirasaka",
-          B: "Tsubaki Kasugano",
-          C: "Keigo Kurusu",
-          D: "Takao Hiyama"
-        },
+        choices: ["Yomotsu Hirasaka", "Tsubaki Kasugano", "Keigo Kurusu", "Takao Hiyama"],
         answer: "D"
       },
       {
