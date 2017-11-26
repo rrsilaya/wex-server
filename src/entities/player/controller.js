@@ -109,7 +109,12 @@ export const computeScore = questions => {
           return reject(500);
         }
 
-        if (question.answer === q.answer) {
+        if (typeof question.answer === 'string') {
+          question.answer = question.answer.toUpperCase();
+          q.answer = q.answer.toUpperCase();
+        }
+
+        if (question.answer == q.answer) {
           switch (question.difficulty) {
             case 'Easy':
               score += 10;
