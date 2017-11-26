@@ -6,7 +6,13 @@ export const getCategories = () => {
       {
         $group: {
           _id: '$category',
-          questions: { $push: { _id: '$_id', question: '$question' } }
+          questions: {
+            $push: {
+              _id: '$_id',
+              question: '$question',
+              difficulty: '$difficulty'
+            }
+          }
         }
       },
       {
