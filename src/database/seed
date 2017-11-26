@@ -1,6 +1,301 @@
 use wex;
-db.questions.dropDatabase();
+db.questions.drop();
 db.questions.insertMany([
+  // Movie 
+  // Easy
+      {
+        question: "Who is the character that Rupert Grint portrays in Harry Potter?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Movie",
+        choices: ["Harry Potter", "Ron Weasley", "Draco Malfoy", "Neville Longbottom"],
+        answer: "B"
+      },
+      {
+        question: "What was the name of the champion robot that Atom fought in the movie Real Steel?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Movie",
+        choices: ["Twin Cities", "Astro", "Zeus", "Metro"],
+        answer: "B"
+      },
+      {
+        question: "Who is the leader of the Avengers",
+        type: "text",
+        difficulty: "Easy",
+        category: "Movie",
+        answer: "Captain America"
+      },
+      {
+        question: "In the movie Lucy, what percent of the human brain was said to be utilized by a normal person?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Movie",
+        choices: ["10", "15", "20", "25"],
+        answer: "A"
+      },
+      {
+        question: "Who does the voice over for Dory in Finding Dory?",
+        type: "text",
+        difficulty: "Easy",
+        category: "Movie",
+        answer: "Ellen Degeneres"
+      },
+      {
+        question: "Written and directed by Rob Zombie, what 2016 film features five carnival workers who are kidnapped and held hostage in a strange large compound?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Movie",
+        choices: ["11", "21", "31", "41"],
+        answer: "C"
+      },
+    // Medium
+      {
+        question: "In what year does the first The Incredibles movie released?",
+        type: "number",
+        difficulty: "Medium",
+        category: "Movie",
+        answer: 2004
+      },
+      {
+        question: "Gal Gadot plays the role of Diana Prince in this American superhero film.",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Movie",
+        choices: ["Thor - Ragnarok", "Power Rangers", "Guardians", "Wonder Woman"],
+        answer: "D"
+      },
+      {
+        question: "What film from the 'Planet of the Apes' reboot series was released in July of 2017?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Movie",
+        choices: ["Dawn of the Planet of the Apes", "Beneath of the Planet of the Apes", "Rise of the Planet of the Apes", "War of the Planet of the Apes"],
+        answer: "D"
+      },
+      {
+        question: "Who played the female lead in the film Passengers released in 2016?",
+        type: "text",
+        difficulty: "Medium",
+        category: "Movie",
+        answer: "Jennifer Lawrence"
+      },
+      {
+        question: "Who directed the film 'Snowden'?",
+        type: "text",
+        difficulty: "Medium",
+        category: "Movie",
+        answer: "Oliver Stone"
+      },
+      {
+        question: "Which of the following superhero films was not released in 2016?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Movie",
+        choices: ["Dead Pool", "Ant-Man", "X-Men - Apocalypse", "Batman v Superman - Dawn of Justice"],
+        answer: "B"
+      },
+      {
+        question: "Released by Walt Disney Pictures, this 2016 biographical film tells the story of Phiona Mutesi, a chess prodigy from Uganda.",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Movie",
+        choices: ["My Golden Days", "Queen of Katwe", "A War", "Tallulah"],
+        answer: "B"
+      },
+    // Hard
+      {
+        question: "In this 2017 Spider-Man film we see 'Peter Parker' take on the evil Vulture.",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Movie",
+        choices: ["Spiderman Homecoming", "Spiderman Strikes Back", "Spiderman Venom", "Spiderman The Dragon's Challenge"],
+        answer: "A"
+      },
+      {
+        question: "Harrison Ford reprises his role as Rick Deckard in what science fiction film?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Movie",
+        choices: ["Blader Runner 2049", "Alien - Covenant", "Death Race 2050", "Flatliners"],
+        answer: "A"
+      },
+      {
+        question: "Which of the following 2017 films is based on a series of books that were released by Stephen King?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Movie",
+        choices: ["Jigsaw", "Wish Upon", "The Dark Tower", "The Bye Bye Man"],
+        answer: "C"
+      },
+      {
+        question: "Film that is based on a Japanese manga of the same name by Masamune Shirow.",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Movie",
+        choices: ["Black Bullet", "Black Butler", "Trinity Seven", "Ghost in the Shell"],
+        answer: "D"
+      },
+      {
+        question: "In 1933, what was the first film to have sequel?",
+        type: "text",
+        difficulty: "Hard",
+        category: "Movie",
+        answer: "King Kong"
+      },
+  //Memes
+    //Easy
+      {
+        question: "The rarest of them all",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Memes",
+        choices: ["Bork", "Pepe", "Loca", "Nyancat"],
+        answer: "B"
+      },
+      {
+        question: "B*tch Pls/Troll Face",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Memes",
+        choices: ["Ming Yao", "Lebrowwn Jaaames", "Swaggy P", "Kobe"],
+        answer: "A"
+      },
+      {
+        question: "Saltiest place on Earth",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Memes",
+        choices: ["The Dead Sea", "Salt Bay", "Your B*tch Ass", "Don Juan Pond"],
+        answer: "D"
+      },
+      {
+        question: "Not an instrument",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Memes",
+        choices: ["Flute", "Guitar", "Drums", "Mayonnaise"],
+        answer: "D"
+      },
+      {
+        question: "2+2=4-1 dats 3 _____",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Memes",
+        choices: ["True", "False", "quick maths", "Both A and B"],
+        answer: "C"
+      },
+      {
+        question: "Dat ting go skrraaaa __________",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Memes",
+        choices: ["du du ku ku tun", "skididu pap pap", "pap pap ka ka ka", "dibidaba dip dip dip"],
+        answer: "C"
+      },
+      {
+        question: "Ako po ay biktima ng peyknyus",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Memes",
+        choices: ["Justiniano Esther Margaux Uson", "mama mo", "Esther Margaux Justiniano Uson", "Margaux Esther Justiniano Uson"],
+        answer: "C"
+      },
+      {
+        question: "What is the title of the song?",
+        type: "text",
+        difficulty: "Easy",
+        category: "Memes",
+        answer: "Darude - Sandstorm"
+      },
+    // Medium
+      {
+        question: "You Don't Say???",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Memes",
+        choices: ["the N word", "Nicolas Cage", "Spongemock", "Amando"],
+        answer: "B"
+      },
+      {
+        question: "Buksan mo papasukin akoooooooo",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Memes",
+        choices: ["Kuya Will", "SAIS", "Parduch", "Wally Bayola"],
+        answer: "A"
+      },
+      {
+        question: "sookah byat",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Memes",
+        choices: ["Chinese", "Malaysian", "Russian", "Indonesian"],
+        answer: "C"
+      },
+      {
+        question: "| || || |_",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Memes",
+        choices: ["Lines", "Is this loss?", "memeguy stickman", "Abstraction"],
+        answer: "B"
+      },
+      {
+        question: "Real name of Big Shaq (dat ting go skrahh)",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Memes",
+        choices: ["Shaquille O'neal", "Michael Dapaah", "Marshall Mathers", "Jowuan Stokes"],
+        answer: "B"
+      },
+    // Hard
+      {
+        question: "Salt Bae is from what country?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Memes",
+        choices: ["Turkey", "Italy", "UAE", "Saudi Arabia"],
+        answer: "A"
+      },
+      {
+        question: "She is known for her phrase 'Cash Me Outside/How Bow Dah?' used in The Dr. Phil Show.",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Memes",
+        choices: ["Lil' Kim", "Cardi B", "Bhad Bhabie", "Gangsta Boo"],
+        answer: "C"
+      },
+      {
+        question: "Damn ______, Back at it again with the white Vans",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Memes",
+        choices: ["Michael", "Brandon", "Daniel", "Jackson"],
+        answer: "C"
+      },
+      {
+        question: "What do you crack open with the boys?",
+        type: "text",
+        difficulty: "Hard",
+        category: "Memes",
+        answer: "A Cold One"
+      },
+      {
+        question: "Most appropriate meme for the phrase 'Your dreams don't get destroyed if you dont have any'",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Memes",
+        choices: ["Spongemock", "Roll Safe", "Thinking Man", "Rare Pepe"],
+        answer: "B"
+      },
+      {
+        question: "Artist of 'Shooting Stars'",
+        type: "text",
+        difficulty: "Hard",
+        category: "Memes",
+        answer: "Bag Raiders"
+      },
   // TV Series
     // Easy
       {
@@ -34,6 +329,14 @@ db.questions.insertMany([
         choices: ["221 B, Baker Street", "42 Wallaby Way, Sydney", "129 West 81st Street, apartment 5A", "12 Grimmauld Place, London, UK"],
         answer: "A"
       },
+      {
+        question: "What is the name of the psychic girl in Stranger Things?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "TV Series",
+        choices: ["Nine", "Ten", "Eleven", "Twelve"],
+        answer: "C"
+      },
     // Medium
       {
         question: "If Sherlock Holmes is considered as the consulting detective, who is considered as the consulting criminal?",
@@ -59,9 +362,16 @@ db.questions.insertMany([
         choices: ["FR13NDS", "wh1t3-r0s3", "fsociety", "E Corp"],
         answer: "C"
       },
+      {
+        question: "What is the name of the race horse that committed suicide after being banned for life for betting on his own race and knowing that his brother died in the Netflix series 'Bojack Horseman'?",
+        type: "text",
+        difficulty: "Medium",
+        category: "TV Series",
+        answer: "Secretariat"
+      },
     // Hard
       {
-        question: "In USA Network’s Mr. Robot, what is the number of Elliot Alderson’s house?",
+        question: "In USA Network's Mr. Robot, what is the number of Elliot Alderson's house?",
         type: "number",
         difficulty: "Hard",
         category: "TV Series",
@@ -75,7 +385,7 @@ db.questions.insertMany([
         answer: "Los Pollos Hermanos"
       },
       {
-        question: "What is Kira Yukimura’s type in the series Teen Wolf?",
+        question: "What is Kira Yukimura's type in the series Teen Wolf?",
         type: "multiple_choice",
         difficulty: "Hard",
         category: "TV Series",
@@ -94,20 +404,20 @@ db.questions.insertMany([
         answer: "C"
       },
       {
-        question: "What is Kayaba Akihiko’s name in SAO?",
+        question: "What is Kayaba Akihiko's name in SAO?",
         type: "multiple_choice",
         difficulty: "Easy",
         category: "Anime",
-        choices: ["Heathcliff", "Klein", "Kirito", "Oberon", ],
+        choices: ["Heathcliff", "Klein", "Kirito", "Oberon"],
         answer: "A"
       },
       {
-        question: "Who is Lelouch’s younger sister who is blind?",
+        question: "Who is Lelouch's younger sister who is blind?",
         type: "multiple_choice",
         difficulty: "Easy",
         category: "Anime",
         choices: ["Euphemia", "Nunnally", "Cornelia", "Shirley"],
-        answer: "A"
+        answer: "B"
       },
       {
         question: "After the first season of ReLIFE, it is revealed that aside from Kaizaki Arata, Rena Kariu also takes the pill that could make a person a high school student again.",
@@ -124,6 +434,44 @@ db.questions.insertMany([
         choices: ["Goldov/Goldof", "Nashetania/Nachetaniya", "Hans", "Fremy/Flamie"],
         answer: "B"
       },
+      {
+        question: "Who is the leader of the Seven Deadly Sins?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Anime",
+        choices: ["Meliodas", "Ban", "King", "Elaine"],
+        answer: "A"
+      },
+      {
+        question: "Kuga Tenori's Seat is ",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Anime",
+        choices: ["7th", "1st", "10th", "8th"],
+        answer: "D"
+      },
+      {
+        question: "What is the color of Mirai Kuriyama's eyeglasses?",
+        type: "text",
+        difficulty: "Easy",
+        category: "Anime",
+        answer: "Red"
+      },
+      {
+        question: "Who is the God that dragged Sora and Shiro in his world?",
+        type: "text",
+        difficulty: "Easy",
+        category: "Anime",
+        answer: "Tet"
+      },
+      {
+        question: "What type of titan is Ymir?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Anime",
+        choices: ["Dancing Titan", "Jaw Titan", "Attack Titan", "Beast Titan"],
+        answer: "B"
+      },
     // Medium
       {
         question: "In Blend S, what is their famous tag line?",
@@ -134,7 +482,7 @@ db.questions.insertMany([
         answer: "C"
       },
       {
-        question: "Where did the first King’s Game happened?",
+        question: "Where did the first King's Game happened?",
         type: "multiple_choice",
         difficulty: "Medium",
         category: "Anime",
@@ -156,9 +504,40 @@ db.questions.insertMany([
         category: "Anime",
         answer: "Rough Diamonds"
       },
+      {
+        question: "Who was the first ghoul that Kaneki Ken ate in the anime series Tokyo Ghoul?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Anime",
+        choices: ["Yakumo Oomori", "Kishou Arima", "Rize Kamishiro", "Eto Yoshimura"],
+        answer: "A"
+      },
+      {
+        question: "Who is the current 3rd Seat of the Totsuki Elite Ten in the anime series Shokugeki no Soma San no Sara?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Anime",
+        choices: ["Eizan Etsuya", "Megishima Tosuke", "Akaganekubo Momo", "Saito Somei"],
+        answer: "B"
+      },
+      {
+        question: "Amagiri Ayato's Lux is",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Anime",
+        choices: ["Ser Veresta", "Raksha Nada", "Gravisheath", "Lyre Poros"],
+        answer: "A"
+      },
+      {
+        question: "In the anime series Amagi Brilliant Park, how many visitors does the protagonist needs to save the amusement park?",
+        type: "number",
+        difficulty: "Medium",
+        category: "Anime",
+        answer: 500000
+      },
     // Hard
       {
-        question: "In Black Clover (TV), what is Yuno’s registration number for Magic Knight’s Entrance Exam?",
+        question: "In Black Clover (TV), what is Yuno's registration number for Magic Knight's Entrance Exam?",
         type: "number",
         difficulty: "Hard",
         category: "Anime",
@@ -186,6 +565,194 @@ db.questions.insertMany([
         difficulty: "Hard",
         category: "Anime",
         answer: 303
+      },
+      {
+        question: "How much money (pounds in the series) does Elias spend to buy Chise Hatori in an auction?",
+        type: "number",
+        difficulty: "Hard",
+        category: "Anime",
+        answer: 5000000
+      },
+      {
+        question: "In the anime series Date A Live, who is the Spirit that Shido first kissed?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Anime",
+        choices: ["Kotori Itsuka", "Yoshino", "Tohka Yatogami", "Tobiichi Origami"],
+        answer: "C"
+      },
+      {
+        question: "In the anime series Accel World, what command enables the player to move beyond his perception but costs 99% of points?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Anime",
+        choices: ["Infinite Burst", "Physical Burst", "Infinite Full Burst", "Physical Full Burst"],
+        answer: "D"
+      },
+      {
+        question: "Aincrad's floor 91th boss",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Anime",
+        choices: ["The Gleams Eyes", "Dorcel The Chaos Drake", "Fuscus The Vacant Colossus", "The Fatal Scythe"],
+        answer: "B"
+      },
+  // Games
+      // Easy
+      {
+        question: "What is the name of Cuphead's pal?",
+        type: "text",
+        difficulty: "Easy",
+        category: "Games",
+        answer: "Mugman"
+      },
+      {
+        question: "What is the name of the first human to fall into the Underground in 'Undertale'?",
+        type: "text",
+        difficulty: "Easy",
+        category: "Games",
+        answer: "Chara"
+      },
+      {
+        question: "What is the sport played in Final Fantasy X?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Games",
+        choices: ["Baseball", "Football", "Blitzball", "Dreamball"],
+        answer: "C"
+      },
+      {
+        question: "Released Date of Pokemon Go",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Games",
+        choices: ["July 6, 2016", "June 6, 2016", "July 8, 2016", "June 8, 2016"],
+        answer: "A"
+      },
+      {
+        question: " What do you call the weapon used in Kingdom Hearts?",
+        type: "text",
+        difficulty: "Easy",
+        category: "Games",
+        answer: "Keyblade"
+      },
+      {
+        question: "What is the currency (money ingame) in the game Ratchet and Clank?",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Games",
+        choices: ["Ring", "Beli", "Bolt", "Gil"],
+        answer: "C"
+      },
+      {
+        question: "Name of the pure Ebil moglin in Adventure Quest",
+        type: "multiple_choice",
+        difficulty: "Easy",
+        category: "Games",
+        choices: ["Twilly", "Zorbak", "Quibble", "Twig"],
+        answer: "B"
+      },
+    // Medium
+       {
+        question: "In the game, The World Ends With You by Square Enix, what is the object used for combat?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Games",
+        choices: ["Weapons", "Pins", "Monsters", "Gloves"],
+        answer: "B"
+      },
+      {
+        question: "A job in Final Fantasy Tactics War of the Lions that does not have any real ability.",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Games",
+        choices: ["Bard", "Onion Knight", "Dark Knight", "Thief"],
+        answer: "B"
+      },
+      {
+        question: "In Patapon 3, what is the command shout for curing any status effect?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Games",
+        choices: ["Pata Pata Pata Pon", "Pon Pon Chaka Chaka", "Pata Pon Don Chaka", "Don Don Chaka Chaka"],
+        answer: "C"
+      },
+      {
+        question: "What do you call the main hero in Patapon 3?",
+        type: "text",
+        difficulty: "Medium",
+        category: "Games",
+        answer: "Uberhero"
+      },
+      {
+        question: "LoL Champion that has this ability - Ranger's Focus.",
+        type: "text",
+        difficulty: "Medium",
+        category: "Games",
+        answer: "Ashe"
+      },
+      {
+        question: "Who is the last boss in Resident Evil 5?",
+        type: "multiple_choice",
+        difficulty: "Medium",
+        category: "Games",
+        choices: ["Cephalo", "Ndesu", "Irving", "Wesker"],
+        answer: "D"
+      },
+      {
+        question: "Creator of Fallout and The Elder Scrolls",
+        type: "text",
+        difficulty: "Medium",
+        category: "Games",
+        answer: "Bethesda"
+      },
+    // Hard
+      {
+        question: "What is the name of Kratos's daughter?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Games",
+        choices: ["Calliope", "Penelope", "Athena", "Ariadna"],
+        answer: "A"
+      },
+      {
+        question: "What is the hairstyle of Agent 47 in Hitman?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Games",
+        choices: ["Mohawk", "Undercut", "Skinhead", "Pompadour"],
+        answer: "C"
+      },
+      {
+        question: "What is the old name of Shadow Blade?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Games",
+        choices: ["Lothar's Cloak", "Lothar's Edge", "Lothar's Sword", "Lothar's Gauntlet"],
+        answer: "B"
+      },
+      {
+        question: "What variation of Sub-Zero in Mortal Kombat X can create an ice hammer?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Games",
+        choices: ["Grandmaster", "Ninjutsu", "Cyromancer", "Unbreakble"],
+        answer: "C"
+      },
+      {
+        question: "Who is the Blacklist #7 in the game Need for Speed Most Wanted?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Games",
+        choices: ["Razor", "Sonny", "Jewels", "Kaze"],
+        answer: "D"
+      },
+      {
+        question: "What is the thing controlled by the player in Little Big Planet?",
+        type: "multiple_choice",
+        difficulty: "Hard",
+        category: "Games",
+        choices: ["Robot", "Ragdoll", "Rocketship", "Monster"],
+        answer: "B"
       }
-
 ]);
