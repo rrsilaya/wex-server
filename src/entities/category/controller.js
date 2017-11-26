@@ -10,7 +10,9 @@ export const getCategories = () => {
             $push: {
               _id: '$_id',
               question: '$question',
-              difficulty: '$difficulty'
+              difficulty: '$difficulty',
+              choices: '$choices',
+              type: '$type'
             }
           }
         }
