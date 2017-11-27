@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(logger('dev'));
 
 const db = 'wex';
-mongoose.connect(`mongodb://localhost/${db}`, err => {
+mongoose.connect(`mongodb://admin:admin@ds123136.mlab.com:23136/${db}`, err => {
   if (err) console.log('Error connecting to database');
   else console.log('Database is connected');
 });
